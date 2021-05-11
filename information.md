@@ -3,7 +3,7 @@ It is an Easy-to-Use Database Module
 
 Set
 Records the Value You Specified in the Database to the Data You Specified
-Login
+
 ```
 const db = require ('plantio.db')
 db.set("home","just me")
@@ -15,7 +15,7 @@ Output
 
 Fetch
 Allows You To Find The Data You Specified From The Database
-Login
+
 ```
 const db = require ('plantio.db')
 const home = db.fetch("home")
@@ -27,7 +27,7 @@ Output
 ```
 Delete
 Deletes The Data You Specified From The Database
-Login
+
 ```
 const db = require ('plantio.db')
 db.delete("home")
@@ -38,7 +38,7 @@ true
 ```
 Add
 Allows You to Add Value to the Data You Specify
-Login
+
 ```
 const db = require ('plantio.db')
 db.add("home",5000)
@@ -50,7 +50,7 @@ Output
 ```
 Subtract
 Subtracts Value From Data You Specify
-Login
+
 ```
 const db = require ('plantio.db')
 db.subtract("home",4999)
@@ -62,7 +62,7 @@ Output
 ```
 Reset
 Resets the database
-Login
+
 ```
 const db = require ('plantio.db')
 db.reset()
@@ -74,7 +74,7 @@ Output
 ```
 Backup
 Opens a New File with the File Name You Specified and Backs Up the Database There
-Login
+
 ```
 const db = require ('plantio.db')
 db.backup("backups")
@@ -86,7 +86,7 @@ Output
 
 Check
 Checks if the Data You Specify in the Database Exists and Gives the Result as Boolean
-Login
+
 ```
 const db = require ('plantio.db')
 db.check("home")
