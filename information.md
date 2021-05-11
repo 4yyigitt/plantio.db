@@ -1,98 +1,97 @@
 # plantio.db
 It is an Easy-to-Use Database Module
 
-
-##Set
+Set
 Records the Value You Specified in the Database to the Data You Specified
-##Login
+Login
 ```
 const db = require ('plantio.db')
 db.set("home","just me")
 ```
-##Output
+Outpu
 ```
 "home":"just me"
 ```
 
-##Fetch
+Fetch
 Allows You To Find The Data You Specified From The Database
-##Login
+Login
 ```
 const db = require ('plantio.db')
 const home = db.fetch("home")
 console.log(home)
 ```
-##Output
+Output
 ```
 "just me"
 ```
-##Delete
+Delete
 Deletes The Data You Specified From The Database
-##Login
+Login
 ```
 const db = require ('plantio.db')
 db.delete("home")
 ```
-##Output
+Output
 ```
 true
 ```
-##Add
+Add
 Allows You to Add Value to the Data You Specify
-##Login
+Login
 ```
 const db = require ('plantio.db')
 db.add("home",5000)
 console.log(db.fetch("home"))
 ```
-##Output
+Output
 ```
 5000
 ```
-##Subtract
+Subtract
 Subtracts Value From Data You Specify
-##Login
+Login
 ```
 const db = require ('plantio.db')
 db.subtract("home",4999)
 console.log(db.fetch("home"))
 ```
-##Output
+Output
 ```
 1
 ```
-##Reset
+Reset
 Resets the database
-##Login
+Login
 ```
 const db = require ('plantio.db')
 db.reset()
 
 ```
-##Output
+Output
 ```
 {}
 ```
-##Backup
+Backup
 Opens a New File with the File Name You Specified and Backs Up the Database There
-##Login
+Login
 ```
 const db = require ('plantio.db')
 db.backup("backups")
 
 ```
-##Output
+Output
 
 ![Screenshot](Adsız.png) 
 
-##Check
+Check
 Checks if the Data You Specify in the Database Exists and Gives the Result as Boolean
-##Login
+Login
 ```
 const db = require ('plantio.db')
 db.check("home")
 
 ```
-##Output
+Output
 ```
 true```
