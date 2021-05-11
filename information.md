@@ -8,7 +8,7 @@ Login
 const db = require ('plantio.db')
 db.set("home","just me")
 ```
-Outpu
+Output
 ```
 "home":"just me"
 ```
