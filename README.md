@@ -83,5 +83,5 @@ db.backup("backups")
 ```
 ####Output
 
-![alt text](https://resimyukle.link/i/oB1Lw)
+![Screenshot](Adsız.png) 
 
