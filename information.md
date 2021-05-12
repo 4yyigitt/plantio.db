@@ -1,97 +1,54 @@
-# plantio.db
-It is an Easy-to-Use Database Module
+![Image](https://img.shields.io/npm/v/plantio.db?color=%2351F9C0&label=Wio.db) 
+![Image](https://img.shields.io/npm/dt/plantio.db.svg?color=%2351FC0&maxAge=3600) 
+#
+![Image](https://nodei.co/npm/plantio.db.png?downloads=true&downloadRank=true&stars=true)
+<br>
 
-Set
-Records the Value You Specified in the Database to the Data You Specified
-
-```
-const db = require ('plantio.db')
-db.set("home","just me")
-```
-Output
-```
-"home":"just me"
+## Yüklemek İçin
+```npm
+npm install  plantio.db
 ```
 
-Fetch
-Allows You To Find The Data You Specified From The Database
+## Nasıl Kullanılır? || how to use?
+Kullanmadan Önce Projenizde "database.json" Adlı  Bir Dosya Açmalısınız 
 
+Before Using, You Need To Open A File Named "database.json" in Your Project.
+# TypeScript
+```typescript
+import db from "plantio.db"
 ```
-const db = require ('plantio.db')
-const home = db.fetch("home")
-console.log(home)
-```
-Output
-```
-"just me"
-```
-Delete
-Deletes The Data You Specified From The Database
+# JS
+```javascript
+const db = require('plantio.db')
 
-```
-const db = require ('plantio.db')
-db.delete("home")
-```
-Output
-```
-true
-```
-Add
-Allows You to Add Value to the Data You Specify
+// Data set | get
+db.set("data1", 1);
+db.fetch("data1");
 
-```
-const db = require ('plantio.db')
-db.add("home",5000)
-console.log(db.fetch("home"))
-```
-Output
-```
-5000
-```
-Subtract
-Subtracts Value From Data You Specify
+// Data exists
 
-```
-const db = require ('plantio.db')
-db.subtract("home",4999)
-console.log(db.fetch("home"))
-```
-Output
-```
-1
-```
-Reset
-Resets the database
+db.check("data1");
 
-```
-const db = require ('plantio.db')
-db.reset()
+// Delete data
 
-```
-Output
-```
-{}
-```
-Backup
-Opens a New File with the File Name You Specified and Backs Up the Database There
+db.delete("key");
 
-```
-const db = require ('plantio.db')
-db.backup("backups")
+// DB Math metods
 
-```
-Output
+db.add("data1", 10);
+db.substract("data1", 5);
 
-![Screenshot](Adsız.png) 
+// Reset DB
+db.reset();
 
-Check
-Checks if the Data You Specify in the Database Exists and Gives the Result as Boolean
+//Backing Up the DB
+db.backup("myfilename");
 
-```
-const db = require ('plantio.db')
-db.check("home")
+//All Database
+db.all()
 
+// DB Array method
+db.push("array1", 10);
 ```
-Output
-```
-true```
+## Bana ulaşabileceğiniz yerler. || Where You Can Reach Me Are Shown Below
+[Discord](https://discord.gg/Wm2pYFuFR9)
